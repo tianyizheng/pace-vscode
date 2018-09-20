@@ -30,6 +30,7 @@ I got LLDB to remote debug fine on the command line but haven't got it to work w
 
 ## Build and Run
 1. Once you've configured the build with Cmake, modify the `cmake.sh` to load the desired modules. Then hit `shift-cmd-B` to generate a build.
+
     *Put `set(CMAKE_BUILD_TYPE Debug)` in your `CMakeLists.txt` during debug.*
 
 2.  Set a break point. Start debugging(`F5`) and ignore the pop-up saying the task cannot be tracked and hit debug anyway. The debug console should start writing out messages. Wait for it to finish and voila!
