@@ -5,4 +5,4 @@ ssh username@coc-ice.pace.gatech.edu killall gdbserver &> /dev/null
 ssh \
   -L9091:localhost:9091 \
   username@coc-ice.pace.gatech.edu \
-  "zsh -l -c 'cd se1/build && make && cd .. && gdbserver :9091 ./build/se1'"
+  "zsh -l -c 'cd project1/build && make && cd .. && gdbserver :9091 ./build/executable1'"
