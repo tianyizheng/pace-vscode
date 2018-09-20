@@ -26,3 +26,6 @@ This will use ssh to port forward 9091 on pace to your local 9091 and start GDBS
 `sshfs username@coc-ice.pace.gatech.edu:se1 ./pace`
 2. Open your workspace in VSCode. Make sure you are outside the build folder. I've had problem with gdb saying cannot find main.cpp before because it wasn't inside the path. Start debugging and ignore the pop-up saying the task cannot be tracked and hit debug anyway. The debug console should start writing out messages. Wait for it to finish and voila!
 3. Don't forget to terminate the debug process at the end.
+
+## Future Work
+1. You can use VSCode extension `RemoteFS` and `CMake Tools` to create tasks for compiling your CPP files remotely and add them to your `preLaunchTask`.
