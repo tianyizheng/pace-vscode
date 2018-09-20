@@ -1,6 +1,9 @@
 # pace-vscode
-How to develop CPP remotely on PACE using VSCode, GDB on MacOS
+This is a guide to help you set up a remote development environment for CPP programs on Pace.
+I've only tried this on a macOS High Sierra. You can loosely follow this guide if you have a different OS.
 ## GDB
+If you have GDB set up then skip this part.
+
 I got LLDB to remote debug fine on the command line but haven't got it to work with VSCode yet. [This](https://github.com/vadimcn/vscode-lldb) seemed promissing though.
 
  1. Install GDB 8.0.1 with Homebrew
@@ -32,3 +35,6 @@ I got LLDB to remote debug fine on the command line but haven't got it to work w
 	`pace.sh` will use ssh to port forward 9091 on pace to your local 9091, compile your executable and start GDBServer. If you don't have ssh key set up, it will prompt for your password in the built-in terminal. Change to an external one by modifying `"externalConsole": false` in `launch.json`. Also you should [make an ssh key](https://serverfault.com/questions/241588/how-to-automate-ssh-login-with-password).
 
 5. Don't forget to terminate the debug process at the end
+
+## Ackowledgement
+This guide is largely based on the very detailed [post by Spencer Elliot.](https://medium.com/@spe_/debugging-c-c-programs-remotely-using-visual-studio-code-and-gdbserver-559d3434fb78)
