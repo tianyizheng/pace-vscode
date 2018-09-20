@@ -14,6 +14,16 @@
             "type": "shell",
             "command": "./pace.sh",
             "isBackground": true
+        },
+        {
+            "label": "Cmake",
+            "type": "shell",
+            "command": "./cmake.sh",
+            "isBackground": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
